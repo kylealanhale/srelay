@@ -39,7 +39,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <sys/ioctl.h>
 #include <sys/sockio.h>
 #include <net/if.h>
+#if TARGET_IPHONE_SIMULATOR
 #include <net/route.h>
+#else
+#include "route.h"
+#endif
 #ifdef	HAVE_SOCKADDR_DL_STRUCT
 # include <net/if_dl.h>
 #endif

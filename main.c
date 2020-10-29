@@ -397,7 +397,7 @@ int inetd_service(int cs)
   return(0);
 }
 
-int main(int ac, char **av)
+int srelay_main(int ac, char **av)
 {
   int     ch, i=0;
   pid_t   pid;
